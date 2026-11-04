@@ -27,7 +27,7 @@ function handleCounterClick() {
 	document.getElementById("clickCount").textContent = clickTotal;
 
 	if (clickTotal % 10 === 0) {
-		alert("You've clicked " + clickTotal + " times! 🎉");
+		alert("you clicked " + clickTotal + " times! ඞ");
 	}
 }
 
