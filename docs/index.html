@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   
-  <head>
+	<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bob homepage</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
+	</head>
     
-  <body>
-    <header class="site-header">
-      <nav class="nav">
-        <h1 class="logo">bobSite</h1>
-        
-        <ul class="nav-links" id="navLinks">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="gameReview.html">Game Review</a></li>
-			<li><a href="DBD/DBD.html">DIGIT210 Project</a></li>
-        </ul>
-      </nav>
-    </header>
+	<body>
+		<header class="site-header">
+			<nav class="nav">
+				<h1 class="logo">bobSite</h1>
+				
+				<ul class="nav-links" id="navLinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
   
-    <main>
-      <section class="hero">
-        <div class="hero-images">
-          <img src="images/milano.jpg" class="active" alt="big orange and white cat" />
-          <img src="images/ginger.jpg" alt="small orange and white cat" />
-        </div>
-        
-        <div class="hero-content">
-          <h2>Welcome to bob's website!</h2>
-          <p>Majoring in Digital Arts, Media, and Technology (DIGIT) at Penn State Erie, the Behrend College.</p>
-        </div>
-      </section>
-      
-      <script>
-          const images = document.querySelectorAll(".hero-images img");
-          let index = 0;
-        
-          setInterval(() => {
-            images[index].classList.remove("active");
-            index = (index + 1) % images.length;
-            images[index].classList.add("active");
-          }, 5000);
-      </script>
-    </main>
-    
-    <footer class="site-footer">
-      <p>© 2025 bobSite. All rights reserved.</p>
-    </footer>
-  </body>
+		<main>
+			<section class="hero">
+				<div class="hero-images">
+					<img src="images/milano.jpg" class="active" alt="big orange and white cat" />
+					<img src="images/ginger.jpg" alt="small orange and white cat" />
+				</div>
+			
+				<div class="hero-content">
+					<h2>Welcome to bob's website!</h2>
+					<p>Majoring in Digital Arts, Media, and Technology (DIGIT) at Penn State Erie, the Behrend College.</p>
+				</div>
+				
+				<div class="hero-content">
+					<p>Hover over/click on<span class="specialSpan" id="specialSpan"> me </span>for fun!</p>
+					<button id="clickButton">number go up?</button>
+					<p>number go up! times clicked: <span id="clickCount">0</span></p>
+					<p id="pointerCoords">current mouse location is being tracked!</p>
+				</div>
+			</section>
+		  
+			<script src="indexScript.js"></script>
+		</main>
+	</body>
 </html>
